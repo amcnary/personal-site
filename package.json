@@ -1,0 +1,21 @@
+{
+  "name": "PersonalSite",
+  "version": "1.0.0",
+  "description": "Personal projects and random stuff for me",
+  "scripts": {
+    "build": "npm install && parcel build ./src/index.html --public-url ./",
+    "clean": "rm -rf dist",
+    "start": "./run.sh"
+  },
+  "keywords": [],
+  "author": "Amanda McNary",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "typescript": "^3.9.3"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
