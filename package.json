@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Personal projects and random stuff for me",
   "scripts": {
-    "build": "npm install && parcel build ./src/index.html --public-url ./",
+    "build": "parcel build ./src/index.html --public-url ./",
     "clean": "rm -rf dist",
-    "start": "./run.sh"
+    "start": "tsc --noEmit --watch & && parcel ./src/index.html"
   },
   "keywords": [],
   "author": "Amanda McNary",
