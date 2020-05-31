@@ -1,9 +1,8 @@
-import os
 import sys
 
 from flask import Flask, render_template, send_from_directory
 
-PORT = 8000
+PORT = 8080
 INDEX_PATH = 'dist'
 
 
@@ -29,7 +28,7 @@ def get_index():
 if __name__ == '__main__':
   try:
     PORT = int(sys.argv[1])
-  except Exception, e:
-    print 'Using default port %d' % PORT
+  except Exception:
+    print('Using default port %d' % PORT)
 
   app.run(host='0.0.0.0', port=PORT)
